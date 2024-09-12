@@ -8,7 +8,7 @@ def get_advanced_writer(file_name):
     def write_everything(*data_set):
         with open(file_name, 'a', encoding='utf-8') as file:
             for data in data_set:
-                file.write(str(data) + '\n')  # Записываем каждый элемент на новой строке
+                file.write(str(data) + '\n')  
     return write_everything
 
 ##Данный код:
@@ -26,6 +26,6 @@ class MysticBall:
 
 ##Ваш код (количество слов для случайного выбора может быть другое):
 first_ball = MysticBall('Да', 'Нет', 'Наверное')
-print(first_ball())  # Случайный выбор слова
+print(first_ball())  
 print(first_ball())
 print(first_ball())
